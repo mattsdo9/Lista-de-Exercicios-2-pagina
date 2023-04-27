@@ -1,0 +1,13 @@
+<script>
+    const data = prompt(`informe uma data DD/MM/AAAA`).trim()
+    const horario = prompt(`informe um horário`).trim()
+    const dia = data.substr(0, 2) - 1;
+    const mes = data.substr(3, 2) - 1;
+    const ano = data.substr(6, 4) - 1;
+    const hora = horario.substr(0, 2) - 1;
+    const min = horario.substr(3, 2) - 1;
+    const seg = horario.substr(6, 2) - 1;
+    const totalSeg = (86400 * dia) + (86400 * 30 * mes) + (86400 * 30 * 12 * ano) + (hora * 3600) + (min * 60 ) + seg
+    document.write(`você ja viveu ${totalSeg} segundos`)
+
+</script>

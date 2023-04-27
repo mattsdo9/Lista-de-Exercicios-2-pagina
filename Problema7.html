@@ -1,0 +1,15 @@
+<script>
+    /*
+    Peça para o usuário informar qual foi o preço do jantar. Calcule 10% da gorjeta e apresente o preço total que deverá pagar para o restaurante e apresente o resultado.
+    */
+
+   //ENTRADA
+   const preçoJantar = prompt(`Insira o preço do Jantar:`);
+   const porcentagemGorjeta = prompt(`Insira o 10% da gorjeta:`);
+   
+   //PROCESSAMENTO
+   const resultadoRestaurante = Number(preçoJantar) + Number(porcentagemGorjeta / 100 * preçoJantar );
+
+   //SAÍDA
+   alert(`O valor final é: ${resultadoRestaurante}`);
+</script>
